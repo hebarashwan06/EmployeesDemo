@@ -1,0 +1,15 @@
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DAL\bin\Debug\EmployeesDemo.DAL.dll
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DAL\bin\Debug\EmployeesDemo.DAL.pdb
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DAL\obj\Debug\EmployeesDemo.DAL.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DAL\obj\Debug\EmployeesDemo.DAL.dll
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DAL\obj\Debug\EmployeesDemo.DAL.pdb
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DAL\bin\Debug\EmployeesDemo.DAL.dll.config
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DAL\bin\Debug\EmployeesDemo.DataMapping.dll
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DAL\bin\Debug\EntityFramework.dll
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DAL\bin\Debug\EmployeesDemo.DataMapping.pdb
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DAL\bin\Debug\EmployeesDemo.DataMapping.dll.config
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DAL\bin\Debug\EntityFramework.xml
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DAL\obj\Debug\EmployeesDemo.DAL.csprojAssemblyReference.cache
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DAL\obj\Debug\EmployeesDemo.DAL.csproj.CopyComplete

@@ -1,0 +1,102 @@
+﻿@model EmployeesDemo.DataMapping.Entities.Employee
+@using EmployeesDemo.DataMapping.Entities
+
+
+<h2>Create New Employee</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label class="control-label col-md-2">Name</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Gender</label>
+            <div class="col-md-10">
+                @Html.DropDownList("Gender",
+                 EnumHelper.GetSelectList(typeof(Gender)) ,
+                 "--Select Gender--",
+                 new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">BirthDate</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Birthdate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Birthdate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Country</label>
+            <div class="col-md-10">
+
+                @Html.DropDownList("CountryId", ViewBag.Countries as SelectList, "--Select Country--", new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">City</label>
+            <div class="col-md-10">
+
+
+                @Html.DropDownListFor(model => model.CityId, new SelectList(""), "--Select City--", new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+@section Scripts {
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#Birthdate").datepicker({
+                format:"dd/MM/yyyy"
+
+            });
+        });
+
+        $('#CountryId').change(function () {
+            $('#CityId').empty();
+
+            $.ajax({
+                type: "POST",
+                url: "/Employees/GetCitiesByCountryId",
+                datatype: "Json",
+                data: { countryId: $('#CountryId').val() },
+                success: function (data) {
+                    $.each(data, function (index, value) {
+                        $('#CityId').append('<option value="' + value.Id + '">' + value.Name + '</option>');
+                    });
+                }
+            });
+        });
+    </script>
+}
+
+

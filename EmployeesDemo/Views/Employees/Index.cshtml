@@ -1,0 +1,79 @@
+﻿@model List<EmployeesDemo.DataMapping.ViewModels.EmployeeListVM>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Employees List</h2>
+
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+
+
+<table class="display" id="tblEmployee">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Gender
+            </th>
+            <th>
+                BirthDate
+            </th>
+            <th>
+                City
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Birthdate)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.CiyName)
+            </td>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+        }
+    </tbody>
+    
+</table>
+
+<link href="http://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
+
+
+@section scripts{
+    <script src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#tblEmployee').DataTable();
+        });
+    </script>
+
+}
+

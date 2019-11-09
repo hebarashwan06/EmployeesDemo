@@ -1,0 +1,15 @@
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DataMapping\bin\Debug\EmployeesDemo.DataMapping.dll.config
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DataMapping\bin\Debug\EmployeesDemo.DataMapping.dll
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DataMapping\bin\Debug\EmployeesDemo.DataMapping.pdb
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DataMapping\bin\Debug\EntityFramework.dll
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DataMapping\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DataMapping\bin\Debug\EntityFramework.xml
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DataMapping\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DataMapping\obj\Debug\EmployeesDemo.DataMapping.csprojAssemblyReference.cache
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DataMapping\obj\Debug\EmployeesDemo.DataMapping.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DataMapping\obj\Debug\EmployeesDemo.DataMapping.csproj.CopyComplete
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DataMapping\obj\Debug\EmployeesDemo.DataMapping.dll
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DataMapping\obj\Debug\EmployeesDemo.DataMapping.pdb
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DataMapping\obj\Debug\EmployeesDemo.DataMapping.Migrations.CreatingEmployeesDB.resources
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DataMapping\obj\Debug\EmployeesDemo.DataMapping.csproj.GenerateResource.cache
+C:\Users\pc\source\repos\EmployeesDemo\EmployeesDemo.DataMapping\obj\Debug\EmployeesDemo.DataMapping.Migrations.AddValidationsToEmployeesDb.resources
